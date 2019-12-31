@@ -14,7 +14,7 @@ public class Preprocessing {
 		try{
 			file=new File ("src/docset1.txt");
 			input=new Scanner(file);
-			fw=new FileWriter("src/405530011_output.xml");
+			fw=new FileWriter("src/output.txt");
 			while(input.hasNext())
 			{
 				
