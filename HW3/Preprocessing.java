@@ -37,9 +37,6 @@ public class Preprocessing {
 
 	}
 	
-	/**
-	 *Processing the words of docset2 to remove stop words and export to 405530011_output.xml.
-	 */
 	public void remove()
 	{	
 	ArrayList<String> myList= new ArrayList<String>();
@@ -52,7 +49,7 @@ public class Preprocessing {
 	File file2;
 	FileWriter fw=null;
 	try{
-		file1=new File("src/405530011_output.xml");
+		file1=new File("src/output.txt");
 		file2=new File("src/stop_words.txt");
 		input1=new Scanner(file1);
 		input2=new Scanner(file2);
@@ -67,7 +64,7 @@ public class Preprocessing {
 			myList.add(line);	
 		}
 		myList.removeAll(stop);
-		fw=new FileWriter("src/405530011_output.xml");
+		fw=new FileWriter("src/output.txt");
 		for(int i=0;i<myList.size();i++){
 			String done=myList.get(i);
 			fw.write(done+" ");
