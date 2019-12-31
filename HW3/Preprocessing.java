@@ -1,9 +1,4 @@
-/** 
- * Assignment #: 4
- * Name: §d¸t°¶
- * StudentID: 405530011
- * Description: This class is used to process lower case and remove stop words.
-*/
+
 import java.io.*;
 import java.util.*;
 public class Preprocessing {
